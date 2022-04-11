@@ -1,0 +1,21 @@
+<form class="payment-form" [formGroup]="paymentForm" (ngSubmit)="onSubmit(paymentForm)">
+    <div class="row mb-3 form-group">
+      <label for="payment_credit_card_number">Credit Card Number</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="payment_credit_card_number" name="payment_credit_card_number" formControlName="payment_credit_card_number">
+      </div>
+    </div>
+    <div class="row mb-3 form-group">
+      <label for="payment_name_on_credit_card">Name on Credit Card</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="payment_name_on_credit_card" name="payment_name_on_credit_card" formControlName="payment_name_on_credit_card">
+      </div>
+    </div>
+    <div class="row mb-3 form-group">
+        <label for="payment_expiration_date">Expiration Date</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="payment_expiration_date" name="payment_expiration_date" formControlName="payment_expiration_date">
+        </div>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

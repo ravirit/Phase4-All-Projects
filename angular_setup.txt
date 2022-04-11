@@ -1,0 +1,22 @@
+
+Angular:
+
+Nodejs server
+npm 
+angular-cli
+
+------------
+
+Angular installation:
+npm  install -g  @angular/cli
+
+specific version installation
+npm  install -g  @angular/cli@version-number
+
+---------------------------------------------------
+Create Angular new project
+
+ng   new  project-name 
+
+
+Note: ng - angular

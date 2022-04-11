@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+       /*      function myfunc(){
+
+                        alert("this is normal func")
+
+                }    
+                
+                myfunc();
+
+
+         var emp =       (function(){
+
+                        alert("this is closure"); // anonymous  function
+
+                }) ();
+
+
+                emp();
+
+                    */
+
+         
+
+                function  fullName(firstName,lastName,callback){  // fname,lname are string params but
+                                       
+                    
+                                                            // greeting its a closure or callback
+
+                        console.log(firstName );
+                        console.log(lastName);
+
+                        name = firstName +" "+ lastName;
+
+                        callback(name);  //greeting(name)
+
+                }
+
+
+
+                var greeting =      function(name){   //callback
+
+                    console.log('closure or callback...')
+
+                  console.log("welcome "+name);
+
+
+                    };
+
+
+                    var  convert = function(name){
+
+                         console.log(name.toUpperCase());
+
+                         }
+
+
+
+                fullName('javeed','mohammed',greeting)
+
+                fullName('rahul','kumar',convert)
+
+               
+             
+
+                   
+
+
+</script>
+
+</head>
+<body>
+    <h1>Closure Demo</h1>
+</body>
+</html>

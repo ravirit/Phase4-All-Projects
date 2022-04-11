@@ -1,0 +1,19 @@
+Angular Component
+-----------------
+1. Component is a class which used @component decorator or annotation.
+2. When ever we create any component , 4 files will be generated
+
+	app-component
+  i)  app.component.ts   (class/controller)
+  ii) app.component.html (html template/view)
+  iii) app.component.css  (css)
+   iv) app.component.spec.ts (unit-testing file)
+
+
+-------------------------
+
+Angular project compulsory one module should be there and one component should be there.
+
+app.module.ts
+
+app.component.ts

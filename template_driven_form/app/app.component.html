@@ -1,0 +1,28 @@
+<h1>Welcome to Angular</h1>
+
+
+
+<h1>Template Driven Form</h1>
+
+<div class="container col-md-5">
+<form      #myForm="ngForm"   (ngSubmit)="getData(myForm.value)">
+
+
+EID : <input type="number" required name="eid"   class="form-control"   ngModel  #eidcontrol="ngModel"> <br>
+<div style="color:red" *ngIf="eidcontrol.touched && eidcontrol.invalid">Eid is Mandatory</div>
+
+ENAME : <input type="text" required name="ename"   class="form-control"   ngModel  #enamecontrol="ngModel"> <br>
+<div style="color:red" *ngIf="enamecontrol.touched && enamecontrol.invalid">EName is Mandatory</div>
+
+Salary : <input type="number" required name="salary"   class="form-control"   ngModel  #salarycontrol="ngModel"> <br>
+<div style="color:red" *ngIf="salarycontrol.touched && salarycontrol.invalid">Salary is Mandatory</div>
+
+Email: <input type="email" required name="email" class="form-control" ngModel  #emailcontrol="ngModel"> <br>
+<div style="color:red" *ngIf="emailcontrol.touched && emailcontrol.invalid">Email should be in Valid format</div>
+
+
+<button type="submit" class="btn btn-success"  [disabled]="myForm.invalid">Submit</button>
+
+
+
+</form>    

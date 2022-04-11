@@ -1,0 +1,28 @@
+<p>login works!</p>
+
+<h1>Login Page </h1>
+
+
+<h1>Welcome to Angular</h1>
+
+
+
+<h1>Template Driven Form</h1>
+
+<div class="container col-md-5">
+<form      #myForm="ngForm"   (ngSubmit)="getData(myForm.value)">
+
+
+
+User Name : <input type="text" required name="uname"   class="form-control"   ngModel  #unamecontrol="ngModel"> <br>
+<div style="color:red" *ngIf="unamecontrol.touched && unamecontrol.invalid">User Name is Mandatory</div>
+
+Password : <input type="number" required name="pwd"   class="form-control"   ngModel  #pwdcontrol="ngModel"> <br>
+<div style="color:red" *ngIf="pwdcontrol.touched && pwdcontrol.invalid">Password is Mandatory</div>
+
+
+<button type="submit" class="btn btn-success"  [disabled]="myForm.invalid">Submit</button>
+
+
+
+</form>    

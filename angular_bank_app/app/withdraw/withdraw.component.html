@@ -1,0 +1,25 @@
+<div style="margin-left: 20%;margin-top: -34%;background-color: gainsboro;bottom: 0;">
+<br>
+    <h3 style="color: blue" align="center" >Withdraw</h3>
+<form class="container panel-default col-md-4">
+  <div class="form-group" >
+    <label>Bank Account Number</label>
+    <input type="number" name="accNo" class="form-control" [(ngModel)]="accNo" required>
+  </div>
+  <div class="form-group" >
+    <label>Withdraw Amount</label>
+    <input type="number" name="accNo" class="form-control" [(ngModel)]="withdrawAmount" required>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)='withdraw()'>Withdraw</button>
+  <br><br>
+ 
+   <span style="color:green" *ngIf="bank; else elseBlock">{{bank1.accHolder}} your updated balance is {{bank1.balance}}</span>
+ <ng-template  #elseBlock ><span style="color: red">Invalid account number</span>
+ </ng-template>
+ <br>  <br> 
+ <br><br>
+    <br>
+</form>
+
+
+</div>

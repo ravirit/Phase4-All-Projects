@@ -1,0 +1,26 @@
+<p>employee works!</p>
+
+<h1>{{result}} </h1>
+
+<button  class="btn btn-success" (click)="test()">Get All Employees</button> <br>
+
+<button  class="btn btn-danger" (click)="delete()">Delete</button>  <br>
+
+<button  class="btn btn-primary" (click)="add()">Add Employee</button>
+
+
+
+
+<h1>Employees Details </h1>
+
+<div class="container col-md-4">
+<table  class="table table-dark">
+
+<tr *ngFor="let emp of employeeList">
+    <td>{{emp.id}}</td> <td>{{emp.ename}}</td><td>{{emp.salary}}</td>
+  
+</tr>
+
+
+</table>    
+</div>

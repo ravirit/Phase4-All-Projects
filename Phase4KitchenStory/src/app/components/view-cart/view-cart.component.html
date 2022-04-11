@@ -1,0 +1,23 @@
+<div class="container-fluid">
+
+    <button class="btn btn-primary" routerLink="/checkout">Checkout</button>
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">food_cart_id</th>
+                <th scope="col">food_cart_name</th>
+                <th scope="col">food_cart_price</th>
+                <th scope="col">food_cart_category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let f of foods">
+                <td>{{f.food_cart_id}}</td>
+                <td>{{f.food_cart_name}}</td>
+                <td>{{f.food_cart_price}}</td>
+                <td>{{f.food_cart_category}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

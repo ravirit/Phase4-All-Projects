@@ -1,0 +1,75 @@
+<h1>Welcome to Angular</h1>
+
+<h2>{{name}}</h2>
+
+
+
+
+
+
+
+<img  [src] = "logo">
+<br>
+<br>
+City: <input type="text"  name="city"  [value]="cname" >  <br>
+City2: <input type="text"  name="city"  value="{{cname}}" >
+<br>
+
+
+<h1>Name is {{custName}} </h1>
+
+<form>
+
+    CUSTOMER NAME : <input type="text" name="cid"  [(ngModel)]="custName"   /> <br>
+
+    <button type="button"  (click)="save()" >Send</button>
+
+
+</form>    
+<br>
+
+<p [style.color]="mycolor">This is CSS class binding</p>
+
+<br>
+
+<p style="color:blue">this is normal css</p>
+
+<br>
+
+<div [style.background-color] = "isSpecial ? color1:color2">This is dynamic css using angular</div>
+
+
+
+<h2>Structural Directives </h2>
+
+<h2 *ngIf="isValid">This is ngIf  </h2>
+
+
+<div *ngFor="let item of  items;let i=index">
+
+       {{i}} <h3>{{item}}</h3>
+
+    </div>
+
+    <br>
+
+  <table border="2">  
+
+    <tr *ngFor="let item of items" ><td>{{item}}</td></tr>
+
+    </table>
+
+
+  <div [ngSwitch]="7">
+      
+    
+    <div *ngSwitchCase="1">This is case1</div>
+    <div *ngSwitchCase="2">This is case2</div>
+    <div *ngSwitchCase="3">This is case3</div>
+    <div *ngSwitchDefault>Default</div>
+
+
+
+
+ </div>   
+   

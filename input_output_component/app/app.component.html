@@ -1,0 +1,10 @@
+<h1>Welcome to App/Parent Component</h1>
+
+
+<app-child  [myInput]="parentData"      (myOutput)="getData($event)"  ></app-child>
+
+
+
+
+<h2>Data from child to parent</h2>
+<h2>{{dataFromChild}}</h2>

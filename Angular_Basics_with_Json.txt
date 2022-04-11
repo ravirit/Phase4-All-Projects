@@ -1,0 +1,131 @@
+Essential Building Blocks/Components:
+====================================
+
+1.Module
+2.Component class (component.ts)
+3. Component Templates (html)
+4. Service class  (Providers or Injectors)
+5. Directives
+6. Pipes
+
+
+
+
+
+
+
+Directives:
+===========
+
+They give additional instructions to the angular framework
+
+3 types of directives
+1.component-template (component directive)
+2.Structural Direvtives
+	Do changes to the DOM structure like add or remove elements
+ *ngIf ,*ngFor , *ngSwitch , ngModel 
+
+3. Attribute directives 
+	Do changes in appearance , in DOM beviour	
+
+	ngClass , ngStyle 
+
+
+
+
+
+
+Services:
+========
+Services are used to implement business logics and also to interact with spring-rest-api
+or back-end applications 
+note: service class  need to be inject inside component class to use it.
+
+How to inject service?
+Using dependency injection
+
+1. use component constructor and inject service as parameter (constructor DI)
+
+2. use component method and inject service as parameter (setter DI)
+
+In case of custom service class , it need to be declare inside providers[] option
+ 
+i. inside app.module.ts   (to use service globally by all components)
+ii. inside component.ts   (to use service locally by one component)
+
+
+HttpClient  Service:
+=====================
+
+This is one of the pre-defined service given by angular to perform rest-crud operations
+
+HttpClient service class available under HttpClientModule
+
+We should import HttpClientModule to use HttpClient service in user-defined service class
+
+HttpClient methods
+get,post,put,delete
+All these methods return Observables object
+
+
+send request  10 sec  ---> Observables
+
+
+
+Observables ---> subscribe it
+20 sec comeback
+
+------------------------------------------
+JSON SERVER SETUP
+=================
+npm install -g json-server
+
+
+Run json serever
+-----------------
+json-server   --watch db.json
+
+
+db.json file
+------------
+{
+  "employee": [
+    {
+      "id": 102,
+      "ename": "tom",
+      "salary": 4000
+    },
+    {
+      "id": 103,
+      "ename": "smith",
+      "salary": 6000
+    },
+    {
+      "id": 104,
+      "ename": "ford",
+      "salary": 7000
+    },
+    {
+      "id": 105,
+      "ename": "ravi",
+      "salary": 9000
+    },
+    {
+      "id": 111,
+      "ename": "javeed",
+      "salary": 3000
+    }
+  ]
+}
+
+
+Now, we can access db.json file using following url
+http://localhost:3000/employee
+
+
+
+
+
+
+
+

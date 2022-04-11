@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <form class="add-food-form" [formGroup]="addFoodForm" (ngSubmit)="onSubmit(addFoodForm)">
+        <div class="row mb-3">
+          <label for="food_name" class="col-sm-2 col-form-label">Food Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="food_name" name="food_name" formControlName="food_name">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="food_price" class="col-sm-2 col-form-label">Food Price</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="food_price" name="food_price" formControlName="food_price">
+          </div>
+        </div>
+        <div class="row mb-3">
+            <label for="food_category" class="col-sm-2 col-form-label">Food Category</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="food_category" name="food_category" formControlName="food_category">
+            </div>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

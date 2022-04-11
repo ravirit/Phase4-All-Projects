@@ -1,0 +1,85 @@
+<form class="row g-3" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm)">
+    <div class="col-md-6 form-group">
+      <label for="user_email">Email</label>
+      <input type="email" class="form-control" id="user_email" name="user_email" formControlName="user_email">
+    </div>
+    <div class="col-md-6 form-group">
+      <label for="user_full_name">Full Name</label>
+      <input type="text" class="form-control" id="user_full_name" name="user_full_name" formControlName="user_full_name">
+    </div>
+    <div class="col-12 form-group">
+      <label for="user_address">Address</label>
+      <input type="text" class="form-control" id="user_address" placeholder="1234 Main St" name="user_address" formControlName="user_address">
+    </div>
+    <div class="col-12 form-group">
+      <label for="user_address2">Address 2</label>
+      <input type="text" class="form-control" id="user_address2" placeholder="Apartment, studio, or floor" name="user_address2" formControlName="user_address2">
+    </div>
+    <div class="col-md-6 form-group">
+      <label for="user_city">City</label>
+      <input type="text" class="form-control" id="user_city" name="user_city" formControlName="user_city">
+    </div>
+    <div class="col-md-4 form-group">
+      <label for="user_state">State</label>
+      <select id="user_state" class="form-select" id="user_state" name="user_state" formControlName="user_state">
+        <option selected>Choose One</option>
+        <option>AL</option>
+        <option>AK</option>
+        <option>AZ</option>
+        <option>AR</option>
+        <option>CA</option>
+        <option>CO</option>
+        <option>CT</option>
+        <option>DE</option>
+        <option>FL</option>
+        <option>GA</option>
+        <option>HI</option>
+        <option>ID</option>
+        <option>IL</option>
+        <option>IN</option>
+        <option>IA</option>
+        <option>KS</option>
+        <option>KY</option>
+        <option>LA</option>
+        <option>ME</option>
+        <option>MD</option>
+        <option>MA</option>
+        <option>MI</option>
+        <option>MN</option>
+        <option>MS</option>
+        <option>MO</option>
+        <option>MT</option>
+        <option>NE</option>
+        <option>NV</option>
+        <option>NH</option>
+        <option>NJ</option>
+        <option>NM</option>
+        <option>NY</option>
+        <option>NC</option>
+        <option>ND</option>
+        <option>OH</option>
+        <option>OK</option>
+        <option>OR</option>
+        <option>PA</option>
+        <option>RI</option>
+        <option>SC</option>
+        <option>SD</option>
+        <option>TN</option>
+        <option>TX</option>
+        <option>UT</option>
+        <option>VT</option>
+        <option>VA</option>
+        <option>WA</option>
+        <option>WV</option>
+        <option>WI</option>
+        <option>WY</option>
+      </select>
+    </div>
+    <div class="col-md-2 form-group">
+      <label for="user_zipcode">Zip Code</label>
+      <input type="text" class="form-control" id="user_zipcode" id="user_zipcode" name="user_zipcode" formControlName="user_zipcode">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>

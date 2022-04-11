@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <form class="d-flex food-search-form" [formGroup]="foodSearchForm" (ngSubmit)="onSubmit(foodSearchForm)">
+        <input class="form-control me-2" type="text" placeholder="Search for Food" aria-label="Search" name="foodSearchFormItem" id="foodSearchFormItem" formControlName="foodSearchFormItem">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+</div>
+
+<div class="container-fluid">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">food_id</th>
+                <th scope="col">food_name</th>
+                <th scope="col">food_price</th>
+                <th scope="col">food_category</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let f of food">
+                <td>{{f.food_id}}</td>
+                <td>{{f.food_name}}</td>
+                <td>{{f.food_price}}</td>
+                <td>{{f.food_category}}</td>
+                <td>
+                    <a class="badge badge-info" (click)="onClick(f)">Add To Cart</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

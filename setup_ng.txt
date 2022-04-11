@@ -1,0 +1,179 @@
+
+
+AngularJS: 1.x
+COMPLETE Javascript
+
+-----------------------
+
+
+Google 
+Angular 2.0 --->Typescript
+
+
+Typescript is a super set of JS.(Microsoft)
+In this OOPs are used.
+class
+object
+inheritance
+interface
+abstraction
+polymorphism
+
+------------------------
+
+Javascript
+
+OOPs in JS ---> ECMA Script  2015,2016 (Adv JS/OO JS)
+
+Microsoft ---> Typescript
+
+
+'hello   friend
+welcome back '
+
+
+"hello"
+
+
+back-tick
+``
+
+In JS
+---------
+
+
+var  name = "javeed";
+
+var  num1 = 99;
+
+demo.ts
+--------
+class Demo{
+
+	 f1():void{
+
+
+
+	}
+
+
+
+	 num1:number = 99;
+	
+	 name:string = 'tom';
+
+	String name = "tom";
+
+	Object x  = "hitesh";    //  let x:any = "hitesh"
+
+		String s = (String)x;    // let s:string =  (<string>x);
+
+	
+
+
+	x:any  = new Employee();
+
+
+}
+
+
+function f1():void{
+
+
+
+}
+
+----------------------------------
+
+Angular setup
+
+
+Nodejs
+Its a client side server , which can execute JS CODE without browser
+NPM
+By default nodejs gives npm (node package manager). npm can be used to install any softwar or 
+plugins in nodejs easily even angular , reactjs etc can be install using npm.
+Angular with CLI
+Angular is a framework , here we install angular framework along with CLI.
+cli- command line interface
+
+command to install angular with cli
+
+cmd prompt:
+npm install -g  angular@cli 
+
+
+Full Stack Java developer
+
+Angular + Java+SpringBoot+ Mysql
+
+   web app deployment :
+   Tomcat server
+
+  client side:
+	nodejs server
+
+ DB:
+	mysql , h2 db
+
+-----------------------------------
+Full stack UI developer
+
+MEAN STACK 
+
+MongoDB , ExpressJS , Angular , Nodejs
+
+MERN STACK
+
+MongoDB , ExpressJS , Reactjs , Nodejs
+
+
+
+class Demo{
+
+
+	public  Demo(){
+
+
+	}
+
+
+	Demo d = new Demo();
+
+	main(){
+
+		add(); sub();
+	}
+
+
+
+	add();
+
+	public int add(){
+
+
+	}
+
+}
+
+
+typescript:
+==========
+
+	class Demo{
+
+		public constructor(){
+
+
+
+		}
+
+
+		new  Demo();
+		
+
+	}
+
+
+
+

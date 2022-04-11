@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    
+    <button class="btn btn-primary" routerLink="/add-food">Add Food</button>
+
+    <table class="table table-dark table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">food_id</th>
+                <th scope="col">food_name</th>
+                <th scope="col">food_price</th>
+                <th scope="col">food_category</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let lf of food_list">
+                <td>{{lf.food_id}}</td>
+                <td>{{lf.food_name}}</td>
+                <td>{{lf.food_price}}</td>
+                <td>{{lf.food_category}}</td>
+                <td>
+                    <a class="badge badge-info" (click)="onDelete(lf.food_id)">Remove Food</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

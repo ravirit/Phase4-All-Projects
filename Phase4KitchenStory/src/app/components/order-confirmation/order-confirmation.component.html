@@ -1,0 +1,70 @@
+<div class="container-fluid">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">food_cart_id</th>
+                <th scope="col">food_cart_name</th>
+                <th scope="col">food_cart_price</th>
+                <th scope="col">food_cart_category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let fci of foodCartInfo">
+                <td>{{fci.food_cart_id}}</td>
+                <td>{{fci.food_cart_name}}</td>
+                <td>{{fci.food_cart_price}}</td>
+                <td>{{fci.food_cart_category}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table class="table table-striped table-dark">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">user_id</th>
+                <th scope="col">user_email</th>
+                <th scope="col">user_full_name</th>
+                <th scope="col">user_address</th>
+                <th scope="col">user_address2</th>
+                <th scope="col">user_city</th>
+                <th scope="col">user_state</th>
+                <th scope="col">user_zipcode</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ui of userInfo">
+                <td>{{ui.user_id}}</td>
+                <td>{{ui.user_email}}</td>
+                <td>{{ui.user_full_name}}</td>
+                <td>{{ui.user_address}}</td>
+                <td>{{ui.user_address2}}</td>
+                <td>{{ui.user_city}}</td>
+                <td>{{ui.user_state}}</td>
+                <td>{{ui.user_zipcode}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">payment_id</th>
+                <th scope="col">payment_credit_card_number</th>
+                <th scope="col">payment_name_on_credit_card</th>
+                <th scope="col">payment_expiration_date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pi of paymentInfo">
+                <td>{{pi.payment_id}}</td>
+                <td>{{pi.payment_credit_card_number}}</td>
+                <td>{{pi.payment_name_on_credit_card}}</td>
+                <td>{{pi.payment_expiration_date}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

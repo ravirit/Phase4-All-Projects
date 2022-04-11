@@ -1,0 +1,42 @@
+<h1>Welcome to Angular</h1>
+
+
+
+
+<div [ngSwitch]="5">
+
+    <h1  *ngSwitchCase="1">This is case1</h1>
+    <h1  *ngSwitchCase="2">This is case2</h1>
+    <h1  *ngSwitchCase="3">This is case3</h1>
+    <h1  *ngSwitchDefault>This is Default</h1>
+
+</div>
+
+Data is : {{data | uppercase}}  <br>
+
+Enter Name: <input type="text" name="data"  [(ngModel)]="data"> <br>
+
+
+
+<div [ngSwitch]="data">
+
+    <div  *ngSwitchCase="'java'"><img src="../assets/java.png"></div>
+    <div  *ngSwitchCase="'python'"><img src="../assets/python.png"></div>
+    <div  *ngSwitchCase="'sql'"><img src="../assets/sql.png"></div>
+    <h1  *ngSwitchDefault>This is Default</h1>
+
+</div>
+
+
+
+
+<h1>Pipes</h1>
+
+<h2> {{'JAVEED' |  lowercase}}
+
+  <h2> {{5000 | currency:'INR'}} </h2>  
+
+  <h2> {{mydate | date:'dd/MM/yy  hh:mm'}} </h2>
+
+
+  <h1> {{3 | sqrt:127}} </h1>
